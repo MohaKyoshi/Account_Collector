@@ -264,5 +264,4 @@ app.on('ready', _ => {
     createMainWin();
     appMenu();
     contextMenuFunc();
-    win.webContents.openDevTools();
 });
