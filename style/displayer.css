@@ -1,0 +1,69 @@
+/* This will display the values */
+#display_section {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.account {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 75%;
+    max-width: 1000px;
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttonGroup button {
+    width: 80px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.buttonGroup button:hover {
+    background-color: coral;
+}
+
+
+.account h2 {
+    color: white;
+    pointer-events: none;
+}
+
+.accountSection {
+    --pad: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: white;
+    padding-top: var(--pad);
+    padding-bottom: var(--pad);
+}

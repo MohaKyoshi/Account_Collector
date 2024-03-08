@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Collector</title>
+
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/AddAccountMenu.css">
+    <link rel="stylesheet" href="../style/displayer.css">
+
+    <script type="module" src="../src/search.js" defer></script>
+    <script type="module" src="../src/createMenu.js" defer></script>
+    <script type="module" src="../src/saveData.js" defer></script>
+    <script type="module" src="../src/loadData.js" defer></script>
+    <script type="module" src="../src/updateData.js" defer></script>
+    <script type="module" src="../src/deleteCard.js" defer></script>
+    <script type="module" src="../src/schema.js" defer></script>
+</head>
+
+<body>
+
+    <section id="searchBar">
+        <input type="text" placeholder="Search" id="searchBarI">
+    </section>
+
+    <section id="display_section">
+
+    </section>
+
+    <section id="Addmenu">
+        <h4>Google Account</h4>
+        <form method="post">
+            <input type="email" id="googleEmail" placeholder="Email">
+            <input type="password" id="googlePassword" placeholder="Password">
+        </form>
+
+        <div>
+            <input type="text" id="nameAccount" placeholder="Name Account">
+            <button type="button" id="create_button">Create</button>
+        </div>
+    </section>
+
+    <section id="loginSec">
+        <h4>MongoDB URL</h4>
+        <div>
+            <input type="text" id="setURL">
+            <button id="getURLButton">Enter</button>
+        </div>
+    </section>
+
+</body>
+
+</html>

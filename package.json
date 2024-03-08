@@ -1,0 +1,23 @@
+{
+  "name": "account_collector",
+  "version": "1.0.0",
+  "description": "This a program to collect all the accounts you have in one place",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "keywords": [
+    "note",
+    "account"
+  ],
+  "author": "MohaKyoshi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.1.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "mongoose": "^8.2.1"
+  }
+}

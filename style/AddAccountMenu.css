@@ -1,0 +1,97 @@
+:root {
+    --sub-background: #2a2e31;
+    --title: #ffffff;
+    --yellow: rgb(245, 212, 145);
+    --red: rgb(216, 86, 84);
+    --dark-red: rgb(183, 61, 59);
+
+    --glass-height: 150px;
+}
+
+
+
+#Addmenu {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    position: fixed;
+    top: 10%;
+
+    min-width: 600px;
+    max-width: 1000px;
+    width: calc(100dvw - 500px);
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+
+    opacity: 0;
+    display: none;
+
+    overflow-y: auto;
+    height: fit-content;
+    min-height: var(--glass-height);
+    max-height: 400px;
+}
+
+
+
+#Addmenu button {
+    width: 80px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#Addmenu button:hover {
+    background-color: coral;
+}
+
+#Addmenu h4 {
+    padding: 20px;
+    color: var(--title);
+    pointer-events: none;
+}
+
+#Addmenu form,
+#Addmenu div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 30px;
+}
+
+#Addmenu form input,
+#Addmenu div input {
+    width: 40%;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    color: white;
+}
+
+#Addmenu form input:focus,
+#Addmenu div input:focus {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+#Addmenu form input::placeholder,
+#Addmenu div input::placeholder {
+    color: rgba(255, 255, 255, 0.623);
+}
